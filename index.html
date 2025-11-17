@@ -1,104 +1,57 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Navigation</title>
-    <style>
-      header{
-        font-size:50px;
-        font-weight:bold;
-        display:flex;
-        align-items:center;
-        text-align:center;
-        background-color:darkcyan;
-      }
-      h1{
-        font-size:50px;
-      }
-      a{
-        font-size:50px;
-      }
-      .main-abt{
-        background-color:teal;
-        color:white;
-        display:flex;
-        text-align:center;
-        align-items:center;
-      }
-      button{
-        glow-color:rgb(217, 176, 255);
-        glow-spread-color:rgba(191, 123, 255, 0.781);
-        enhanced-glow-color:rgb(231, 206, 255);
-        btn-color:rgb(100, 61, 136);
-        border:0.25em solid var(--glow-color);
-        padding:1em 3em;
-        color:var(--glow-color);
-        font-size:15px;
-        font-weight:bold;
-        background-color:var(--btn-color);
-        border-radius:1em;
-        outline:none;
-        box-shadow:0 0 1em 0.25em var(--glow-color),
-          0 0 4em 1em var(--glow-color),
-          inset 0 0 0.75em 0.25em var(-glow-color);
-        text-shadow:0 0 0.5em var(--glow-color);
-        position:relative;
-        transition:all 0.3s;
-      }
-      button:after{
-        pointer-events:none;
-        content:="";
-        position:absolute;
-        top:120%;
-        left:0;
-        height:100%;
-        background-color:var(--glow-spread-color);
-        filter:blur(2em);
-        opacity:0.7;
-        transform:perspective(1.5em) rotateX(35deg) scale(1 0.6);
-      }
-      button:hover{
-        color:var(--btn-color);
-        background-color:var(--glow-color);
-        box-shadow:0 0 1em 0.25em var(--glow-color),
-          0 0 4em 2em var(--glow-spread-color),
-        inset 0 0 0.25em 0.25em var(--glow-color);
-        
-      }
-      button:active{
-        box-shadow:0 0 0.6em 0.25em var(--glow-color),
-          0 0 2.5em 0.25em var(--glow-spread-color),
-          inset 0 0 0.5em 0.25em var(--glow-color);
-      }
-      
-      footer{
-        background-color:cadetblue;
-        color:white;
-      }
-      main{
-        font-size:10px;
-        background-color:royalblue;
-        color:white;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Davina</h1>
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
-      <button>Read more</button>
-    </header>
-    <main>
-      <!--About-->
-      <div class="main-abt"></div>
-      <p>Hi! My name is Davina. I am a web developer specialised in HTML, CSS, and Javascript.
-      Welcome to my website!</p>
-    </main>
-    <footer>
-      <!--Contacts-->
-      <p>For more information, please call the following numbers:0240 000 000 or 0501 010 101</p>
-      &copy; 2025 index.html---Davina Q.
-    </footer>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>*{
+    padding: 0px;
+    margin: 0;
+
+}
+body{
+    text-decoration: none;
+    border: 2px solid black;
+    align-items: center;
+    text-align:center;
+    height: 250px;
+    width: 350px;
+}
+
+a:hover{
+    color: red;
+}
+input{
+    border-radius: 5px;
+    margin-top: 6px;
+    border:2px solid black;
+    background-color: antiquewhite;
+}
+
+
+button{
+   width:60px;
+   background-color: blue;
+   color:white;
+   box-shadow: 5px solid;
+   
+}
+ button:hover{
+            background-color:gold;
+            color:black;
+        }
+</style>
+    </head>
+   <body>
+    <div class="login-container">
+        <h2>Welcome back, Davina!</h2>
+        <img src="images/istockphoto-166017058-1024x1024.webp" alt="profile">
+        <div class="login-content">
+            <form action="" method="post">
+                 <input type="email" name="email" id="email" placeholder="Enter Email"required><br>
+                 <input type="password" name="password" id="password" placeholder="Enter Password"required><br>
+                 <button type="submit">Login</button>
+                 <p><a href="#">Forgot Password?</a></p>
+                 </form>
+        </div>
+    </div>
+</body>
 </html>
